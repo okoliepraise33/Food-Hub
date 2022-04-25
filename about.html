@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PRAISE KITCHEN</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/25f31fcddb.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h4 style="background-color: #009688; text-align: center; padding: 30px;">Need help placing an order? Call: 08144873546</h4>
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="order.html">ORDER</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="login.html">LOGOUT</a></li>
+			</ul>
+		</nav>
+	</div>
+
+  </section>
+
+ <div id="menuBtn">
+	<img src="images/download.png" id="menu">
+ </div>
+
+ <section class="items">
+	<div class="item">
+		<img src="images/about.jpg" id="pic">
+</div>
+ </section>
+
+<footer>
+	<div class="row">
+		<div class="col">
+			<h2>Praise Kitchen</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ante vestibulum, dapibus diam quis, facilisis erat. </p>
+	</div>
+	 <div class="col">
+	 	<h3>Office</h3>
+	 	<p>55, moleye street</p>
+	 	<p>Sabo-yaba, Lagos</p>
+	 	<p class="email-id">okoliepraise33@gmail.com</p>
+	 	<h4>+234 - 8144873546</h4>
+	 </div>
+	 <div class="col">
+	 	<h3>Links</h3>
+	 	<ul>
+	 		<li><a href="index.html">HOME</a></li>
+			<li><a href="order.html">ORDER</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="login.html">LOGIN OUT</a></li>
+
+	 	</ul>
+	 </div>
+	 <div class="col">
+	 	<h3>Newsletter</h3>
+	 	<form class="footer-form">
+	 		<i class="fas fa-envelope"></i>
+	 		<input type="email" placeholder="Enter your email" required>
+	 		<button type="sumbit"><i class="fas fa-arrow-right"></i></button>
+	 	</form>
+	 </div>
+	</div>
+</footer>
+
+
+<script>
+	var menuBtn = document.getElementById("menuBtn")
+	var sideNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+  sideNav.style.right = "-250px";
+
+	menuBtn.onclick = function(){
+		if(sideNav.style.right == "-250px"){
+			sideNav.style.right = "0";
+			menu.src = "images/close.png"
+		}
+		else{
+			sideNav.style.right = "-250px";
+			menu.src = "images/download.png";
+		}
+	}
+</script>
+
+</body>
+</html>

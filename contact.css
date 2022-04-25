@@ -1,0 +1,135 @@
+#sideNav{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: #009688;
+  z-index: 2;
+  transition: 0.5S;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 20px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#menuBtn{
+  width:50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+#menuBtn img{
+  width: 30px;
+  margin-top: 15px; 
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 770px){
+  .banner-text h1{
+  font-size: 44px;
+ }
+ .banner-btn a{
+  display: block;
+  margin: 20px auto;
+ }
+}
+/*footer*/
+
+footer{
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 25%;
+  margin-right: -50px;
+}
+
+.col h2{
+  margin-bottom: 35px;
+}
+
+.col h3 li{
+  width: fit-content;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.col li{
+  padding-right: 80px;
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.cross{
+  background-color: papayawhip;
+}
+
+.copy{
+  font-size: .8rem;
+  text-align: center;
+  color: #000;
+}
+
+footer ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.footer-form .fas{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer-form input{
+  width: 100;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
